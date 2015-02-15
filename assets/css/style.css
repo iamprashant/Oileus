@@ -1,0 +1,52 @@
+/**
+ * Oileus documentation styles
+ * @author Ritesh Shrivastav<ritesh@codingdash.com>
+ */
+
+@import url(bootstrap.css);
+
+header {
+	padding-top: 40px;
+	padding-bottom: 10px;
+	margin-bottom: 0px;
+	background: #993D00;
+	color: #FFF;
+}
+header h1{
+	text-align: center;
+}
+nav {
+	margin-bottom: 20px;
+	background: #642F0D;
+}
+ul.linear {
+	padding: 0px;
+	margin: 0px;
+}
+ul.linear li {
+	display: inline-block;
+	margin-right: 10px;
+}
+ul.linear li a{
+	display: block;
+	padding: 8px 15px;
+	color: #FFF;
+	text-decoration: none;
+	margin: 2px;
+}
+ul.linear li.active a, ul.linear li a:hover{
+	background: #421A00;
+	border-radius: 6px;
+}
+footer {
+	background: #F7F7F7;
+	border-top: 1px solid #DDD;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: 50px;
+}
+.example {
+	display: block;
+	margin: 10px;
+	margin-bottom: 20px;
+}
