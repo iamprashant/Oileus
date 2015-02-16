@@ -38,6 +38,9 @@ ul.linear li.active a, ul.linear li a:hover{
 	background: #421A00;
 	border-radius: 6px;
 }
+#content {
+	min-height: 300px;
+}
 footer {
 	background: #F7F7F7;
 	border-top: 1px solid #DDD;
@@ -71,4 +74,7 @@ ul.footlink{
 ul.footlink li{
 	display: inline-block;
 	margin-left: 10px;
+}
+.log-list dd{
+	margin-bottom: 30px;
 }
