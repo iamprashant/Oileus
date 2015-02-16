@@ -46,7 +46,19 @@ footer {
 	margin-top: 50px;
 }
 .example {
-	display: block;
 	margin: 10px;
 	margin-bottom: 20px;
+	background: #474747;
+	color: #67FF00;
+	padding: 15px;
+	white-space: pre;
+	overflow: auto;
+	display: block;
+	font-family: Menlo, Consolas, Monaco, monospace;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.center {
+	text-align: center;
 }
