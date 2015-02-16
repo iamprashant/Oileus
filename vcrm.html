@@ -36,7 +36,14 @@
 		<div class="container">
 <div class="row">
 	<div class="col-sm-3">
-		
+		<div class="list-group">
+			<a href="#intro" class="list-group-item">About VCRM</a>
+			<a href="#controller" class="list-group-item">Oileus Controller</a>
+			<a href="#action" class="list-group-item">Action</a>
+			<a href="#view" class="list-group-item">Oileus View</a>
+			<a href="#process" class="list-group-item">Process listeners</a>
+			<a href="#misc" class="list-group-item">Misc</a>
+		</div>
 	</div>
 	<div class="col-sm-9">
 			<p id="intro">
@@ -58,7 +65,7 @@ oileus.controller("MyController", function() {
 </div>
 
 
-			<h3>Action</h3>
+			<h3 id="action">Action</h3>
 			<p>
 				In oileus all the member of controllers are called Action, which act for some task. If 
 				a controller is already defined the actions can be added in following manner-
