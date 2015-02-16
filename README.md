@@ -1,5 +1,4 @@
 Oileus
 ======
 
-A JavaScript framework for web applications.
-Will be opensource after few moments.
+A JavaScript frametype for Oileus. For more details on how to use this [visit here](http://oileus.codingdash.com/ "Oileus documentation").
