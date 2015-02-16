@@ -57,6 +57,7 @@ footer {
 	font-family: Menlo, Consolas, Monaco, monospace;
 	font-size: 12px;
 	line-height: 20px;
+	cursor: auto;
 }
 
 .center {
