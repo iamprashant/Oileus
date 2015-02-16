@@ -1249,10 +1249,6 @@
     };
 })(jQuery);
 
-/**
- * Oileus main def starts here.
- * 
- */
 (function(window, document, undefined) {
 	"use strict";
 
@@ -1288,24 +1284,6 @@
 
 	/**
 	 * Perform binded event as gets on the page.
-	 * @example
-	 *    HTML code
-	 *    =========
-	 * 	  <div os-rel = "activate"
-	 * 	       os-class = "MyClass"
-	 * 	       os-active = "myActive">
-	 * 	       ...
-	 * 	  </div>
-	 *
-	 *    JS Handler 
-	 *    ==========
-	 *    oileus.controller("MyClass",function(){
-	 *        //code
-	 *    }).actFor("MyClass", "myActive", function(el){
-	 *        //code
-	 *        el.append("Some text is updated by activo");
-	 *    });
-	 * 		
 	 * @param  {Oileus} oileus Object of oileus
 	 * @return {Oileus}
 	 */
@@ -1324,13 +1302,6 @@
 
 	/**
 	 * Loads the content dynamically of given URL
-	 * @example
-	 *    HTML code
-	 *    =========
-	 * 	  <div os-through = "oileus"
-	 * 	  	   src = "http://www.codingdash.com/about/me">
-	 * 	       ...
-	 * 	  </div>
 	 * @param  {Oileus} oileus Object of oileus class
 	 * @return {Oileus}
 	 */
@@ -1347,29 +1318,6 @@
 
 	/**
 	 * Formify the Oileus forms.
-	 * @example
-	 * 	   HTML code
-	 * 	   =========
-	 * 	   <form action="https://codingdash.com/check/login" 
-	 * 	     os-through="oileus" 
-	 * 	     os-class="Account" 
-	 * 	     os-event="preCheck"
-	 * 	     os-handler="nowCheck">
-	 * 	     	...
-	 * 	   </form>
-	 * 	   
-	 *     JS code to handle this request
-	 *     ==============================
-	 *     oileus.controller("Account",function(){
-	 *         //code
-	 *         alert("initiated");
-	 *     }).actFor("Account", "preCheck", function(el){
-	 *         //code
-	 *         alert("Before sending request");
-	 *     }).actFor("Account", "nowCheck", function(response, el){
-	 *         //code
-	 *         alert("the status is :" + response.status);
-	 *     });
 	 * @return {Oileus}
 	 */
 	var formify = function(oileus) {
@@ -1419,27 +1367,6 @@
 
 	/**
 	 * Linkify to Oileus links.
-	 * @example
-	 * 	   HTML code
-	 * 	   =========
-	 * 	   <a href="https://codingdash.com/check/login" 
-	 * 	     os-through="oileus" 
-	 * 	     os-class="Account" 
-	 * 	     os-event="preCheck"
-	 * 	     os-handler="nowCheck">Check login</a>
-	 * 	   
-	 *     JS code to handle this request
-	 *     ==============================
-	 *     oileus.controller("Account",function(){
-	 *         //code
-	 *         alert("initiated");
-	 *     }).actFor("Account", "preCheck", function(el){
-	 *         //code
-	 *         alert("Before sending request");
-	 *     }).actFor("Account", "nowCheck", function(response, el){
-	 *         //code
-	 *         alert("the status is :" + response.status);
-	 *     });
 	 * @return {Oileus}
 	 */
 	var linkify = function(oileus) {
@@ -1492,10 +1419,6 @@
 	/**
 	 * Binds the target to any kind of element other than anchor tag. It's not
 	 * a good practice but some situation may demand this.
-	 * @example
-	 * <div os-rel="target" href="http://codingdash.com">
-	 * 		Content
-	 * </div>
 	 * @param  {Oileus} oileus Single object of Oileus main class.
 	 * @return {void}
 	 */
