@@ -177,6 +177,11 @@ oileus.val1;
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-50833602-3', 'auto');
   ga('send', 'pageview');
+
+  $(function() {
+    var $affixElement = $('div[data-spy="affix"]');
+    $affixElement.width($affixElement.parent().width());
+  });
 </script>
 </body>
 </html>
