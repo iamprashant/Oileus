@@ -26,6 +26,7 @@
 			<ul class="linear">
 				<li><a href="index.html">Home</a></li>
 				<li><a href="start.html">Getting Started</a></li>
+				<li><a href="vcrm.html">VCRM</a></li>
 				<li class="active"><a href="usage.html">Usage</a></li>
 				<li><a href="https://github.com/codingdash/Oileus/">Source</a></li>
 				<li><a href="log.html">Change log</a></li>
@@ -35,7 +36,90 @@
 	</nav>
 	<div id="content">
 		<div class="container">
-			Information is about to come.
+<div class="row">
+	<div class="col-sm-3"></div>
+	<div class="col-sm-9">
+		Using Oileus is very easy, just we need to add some attribute to our HTML tags. Let's see how-
+		<h3 id="form">Oileus forms</h3>
+		Oileus forms are special forms, whose request sent by oileus. All validation code can reside at client
+		or server side also. Follwoing is an example of writing an Oileus form-
+<div class="example">
+&lt;form action="http://www.codingdash.com/signup" 
+    os-through="oileus" os-class="Account" os-event="preSignup" os-handler="onSignup"&gt;
+    &lt;input type="text" name="name" id="name"&gt;
+    &lt;input type="text" name="city" id="city"&gt;
+    &lt;input type="password" name="password" id="password"&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;
+</div>
+		And the Oileus controller for the same class can be written as following-
+<div class="example">
+/**
+ * For account activity
+ * @constructor
+ */
+oileus.controller("Account", function() {
+	//constructor code
+})
+/**
+ * Will run before the request will be sent. Simply return false to abort the
+ * request
+ */
+.actFor("Account",
+"preSignup", function(el) {
+	//code
+	return true;
+})
+/**
+ * Will run after the response.
+ * request
+ */
+.actFor("Account",
+"onSignup", function(info, el) {
+	//code
+});
+</div>
+		<h3 id="link">Oileus links</h3>
+		<p>In the way how forms are using Oileus, anchor tags also can use the Oileus. For example-</p>
+<div class="example">
+&lt;a href="http://www.codingdash.com/increase/like" 
+    os-through="oileus" os-class="MyController" os-event="myEvent" os-handler="myHandler"&gt;
+    Like
+&lt;/a&gt;
+</div>
+		
+		<h3 id="activo">Oileus Active</h3>
+		<p>When you want to perform some action, when specific contents gets ready. In such case
+		you can use Oileus active. Here is an example for how to use it-</p>
+<div class="example">
+&lt;div os-rel = "activate"
+   	 os-class = "MyController" os-active = "myActiveAction"&gt;
+		...
+&lt;/div&gt;
+</div>
+		
+		<h3 id="target">Oileus Target</h3>
+		<p>It binds the target to any kind of element other than anchor tag. It's not a good practice but some situation may demand this. Here is an example for how to use it-</p>
+<div class="example">
+&lt;div os-rel="target" href="http://codingdash.com"&gt;
+		...
+&lt;/div&gt;
+</div>
+
+
+		<h3 id="autoload">Autoload</h3>
+		<p>
+			Loads the content dynamically of given URL. Here is the example-
+		</p>
+<div class="example">
+&lt;div os-through = "oileus"
+     src = "http://www.codingdash.com/about/me"&gt;
+    ...
+&lt;/div&gt;
+</div>
+		<p>This will load the content from the given URL. This feature can be used only divisions.</p>
+	</div>
+</div>
 		</div>
 	</div>
     <footer>
