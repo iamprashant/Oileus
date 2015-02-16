@@ -62,3 +62,12 @@ footer {
 .center {
 	text-align: center;
 }
+
+ul.footlink{
+	padding: 0px;
+	margin: 0px;
+}
+ul.footlink li{
+	display: inline-block;
+	margin-left: 10px;
+}
