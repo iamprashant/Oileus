@@ -102,7 +102,7 @@ oileus.process("myDynamicBox", function(info) {
 			<p>Note - There are two default process handlers are there - <a href="#misc"><b>link</b> and <b>script</b></a></p>
 			<h4>Key points</h4>
 			<ul>
-				<li>Process listeners should return boolean, if it wants to skip further processing </li>
+				<li>Process listeners should return boolean. If you want to skip further processing return false else true.</li>
 				<li>If you want to access response, add one argument to method</li>
 				<li>The name given to process should be unique</li>
 				<li>If you want to override the process, you can add new process with the same name</li>
