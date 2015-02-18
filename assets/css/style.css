@@ -52,8 +52,8 @@ footer {
 .example {
 	margin: 10px;
 	margin-bottom: 20px;
-	background: #474747;
-	color: #67FF00;
+	background: #073A45;
+	color: #FFFFFF;
 	padding: 15px;
 	white-space: pre;
 	overflow: auto;
@@ -62,6 +62,7 @@ footer {
 	font-size: 12px;
 	line-height: 20px;
 	cursor: auto;
+	box-shadow: 0px 2px 5px #A5A5A5;
 }
 
 .center {
@@ -78,4 +79,12 @@ ul.footlink li{
 }
 .log-list dd{
 	margin-bottom: 30px;
+}
+.intro p {
+	color: #999;
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+.intro h1 {
+	margin-bottom: 20px;
 }
