@@ -12,7 +12,14 @@ ga('create', 'UA-50833602-3', 'auto');
 ga('send', 'pageview');
 
 //Hoping that jQuery is loaded already
-$(document).ready(function(){
+$(document).ready(function() {
+	//loading oileus
+	var script = document.createElement('script');
+	script.src = "assets/js/oileus-1.0.0.min.js";
+	script.onload = function () {
+		//keep quit
+	};
+	document.head.appendChild(script);
 
 	// Smooth scroll to anchor
 	$('a[href*=#]:not([href=#])').click(function() {
