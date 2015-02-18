@@ -88,3 +88,10 @@ ul.footlink li{
 .intro h1 {
 	margin-bottom: 20px;
 }
+
+.geek-error {
+	margin: 40px 0px;
+	padding: 20px;
+}
+.geek-error h1{
+}
