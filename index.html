@@ -3,9 +3,10 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Oileus: A simple framework for javascript. For more visit - http://oileus.codingdash.com">
+    <meta name="description" content="Oileus is a javascript framework which is mainly designed for maintaining the large blocks of code into simple and managable code.">
     <meta name="keywords" content="oileus, oileus framework, frametype, oileusjs, oileus.js, javascript framework">
     <meta name="author" content="Ritesh Shrivastav">
+    <!-- <base href="http://oileus.codingdash.com/"> -->
     <title>Oileus</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="//www.codingdash.com/favicon.ico" rel="icon" type="image/x-icon">
@@ -18,57 +19,39 @@
                 <a class="btn btn-default" href="https://github.com/codingdash/Oileus/zipball/master">Oileus.zip</a>
                 <a class="btn btn-default" href="https://github.com/codingdash/Oileus/tarball/master">Oileus.tar.gz</a>
             </section>
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://oileus.codingdash.com" data-text="Oileus Frametype: A simple framework for javascript." data-size="large" data-related="codingdash" data-count="none">Tweet</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
             <div class="clearfix"></div>
         </div>
     </header>
     <nav>
         <div class="container">
             <ul class="linear">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li class="active"><a href="index.html">Oileus</a></li>
                 <li><a href="start.html">Getting Started</a></li>
-                <li><a href="vcrm.html">VCRM</a></li>
-                <li><a href="usage.html">Usage</a></li>
+                <li><a href="learn.html">Understanding</a></li>
+                <li><a href="docs/">Documentation</a></li>
                 <li><a href="log.html">Change log</a></li>
             </ul>
         </div>
     </nav>
     <div id="content">
         <div class="container">
-            <h3 id="about-oileus">Introduction</h3>
-            <p>Oileus is a javascript framework made on the top of <a href="https://jquery.org/">jQuery</a>
-            which is mainly designed for maintaining the large blocks of code into simple and managable code. 
-            It comes with simple improvement to the HTML tags, so you can do much more things without writing 
-            a bit of javascript. :) </p>
-            <p>On serverside you can have any language to communicate with, because it understands JSON
-            to talk with the services. Find more about what you can do on the <a href="usage.html">usage page</a>.</p>
-
-
-
-            <h3 id="target">Targeted Plateforms</h3>
-            <p>Mozilla Firefox 1.5 and higher, Apple Safari 2.0.4 and higher, Chrome 1.0 and higher</p>
-
-
-
-            <h3 id="contributing">Contributing to Oileus</h3>
-            <p>Oileus is an opensource framework, you can get the code from 
-            <a href="https://github.com/codingdash/Oileus">github</a>, and you can use it for free or you 
-            can improve. If you find anything to contribute you can do pull request on github. You can send 
-            suggestions at <a href="mailto:oileus@codingdash.com">oileus@codingdash.com</a></p>
-
-
-
-            <h3 id="copyright-and-license">License</h3>
-            <h4>Source Code</h4>
-            <p>Oileus project is released under the terms of the <a target="_blank" href="http://en.wikipedia.org/wiki/MIT_License">MIT license</a>.</p>
-            <p>The MIT License is simple and easy to understand and it places almost no restrictions on what you can do with a Oileus project. You are free to use any Oileus project in any other project (even commercial projects) as long as the copyright header is left intact.</p>
-
-            <h4>Sample Code</h4>
-            <p>All demos and examples, whether in a code project's repository or displayed on a Oileus site, are released under the terms of CC0. CC0 is even more permissive than the MIT license, allowing you to use the code in any manner you want, without any copyright headers, notices, or other attribution.</p>
-
-            <h4>Web Sites</h4>
-            <p>The content on Oileus web sites are released under the terms of the <a target="_blank" href="http://en.wikipedia.org/wiki/MIT_License">MIT license</a>.</p>
+            <div class="intro">
+                <h1 class="center">Want to manage JavaScript code?</h1>
+                <p class="center">Oileus frametype for JavaScript</p>
+            </div>
+<div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+<div class="example">
+&lt;form action="http://www.codingdash.com/signup" method="post" os-through="oileus" 
+    os-class="Account" os-event="preSignup" os-handler="onSignup"&gt;
+    &lt;input type="text" name="name" id="name"&gt;
+    &lt;input type="text" name="city" id="city"&gt;
+    &lt;input type="password" name="password" id="password"&gt;
+    &lt;input type="submit"&gt;
+&lt;/form&gt;
+</div>
+    </div>
+</div>
         </div>
     </div>
     <footer>
@@ -88,6 +71,9 @@
             </p>
         </div>
     </footer>
+<script type="text/javascript" src="assets/js/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/app.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
