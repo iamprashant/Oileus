@@ -95,3 +95,23 @@ ul.footlink li{
 }
 .geek-error h1{
 }
+#notification {
+	background: yellow;
+	padding: 20px 0px;
+	margin-top: -20px;
+	margin-bottom: 10px;
+}
+.features {
+	background-color: #f0f2f1;
+	padding: 125px 0;
+	margin: 50px 0px;
+	position: relative;
+}
+
+.features section{
+	margin-bottom: 30px;
+}
+.features section h2{
+	color: #666;
+	margin-bottom: 30px;
+}
